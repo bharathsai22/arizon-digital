@@ -1,0 +1,52 @@
+/* Spinner animation */
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinner {
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Fade animations */
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+  }
+  
+  /* Slide animations */
+  .slide-down-enter {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  
+  .slide-down-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 200ms, transform 200ms;
+  }
+  
+  .slide-down-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .slide-down-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 200ms, transform 200ms;
+  }
